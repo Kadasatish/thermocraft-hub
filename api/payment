@@ -1,8 +1,0 @@
-export default function handler(req, res) {
-  if (req.body.status === 'success') {
-    res.status(200).json({ message: 'Payment Success' });
-    // JS కి సిగ్నల్ పంపే logic జోడించండి (WebSocket లేదా fetch)
-  } else {
-    res.status(400).json({ message: 'Payment Failed' });
-  }
-}
